@@ -1,0 +1,31 @@
+input[type="text"].search-input{
+  line-height: 2.5rem;
+  border: 2px solid #006864;
+  border-radius: 3rem;
+  background-color: #F1F1F1;
+  background-image: url(../assets/search-icon.svg);
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem 1.5rem;
+  padding-left: 1.5rem;
+  min-height: 52px;
+}
+
+.select-submit {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+}
+
+.select-submit > .form-select{
+  flex: 2;
+  margin-right: 5px;
+}
+.select-submit > .submit-button{
+  flex: 1;
+  background-image: linear-gradient(237deg, #29a99f 0%, #1b75f3 100%);
+}
+
+.notfound{
+  margin: 0px 10px;
+}

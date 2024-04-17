@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <title>ESG</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/search.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/chart.css">
+  <script src="../node_modules/chart.js/dist/chart.umd.js"></script>
+
+
+</head>
+<body>
+  <div class="mycontainer">
+    <div class="search-container">  
+      <form id="contactForm" onsubmit="CalculateESG(event)">
+        <input name="name" class="form-control search-input" type="text" id="searchInput" placeholder="请输入股票代码:">
+
+        <div class="select-submit">
+          <select class="form-select select-year" aria-label="Default select example" name="select">
+            <option selected value="2020/12/31">2020/12/31</option>
+            <option value="2019/12/31">2019/12/31</option>
+            <option value="2018/12/31">2018/12/31</option>
+            <option value="2017/12/31">2017/12/31</option>
+            <option value="2016/12/31">2016/12/31</option>
+            <option value="2015/12/31">2015/12/31</option>
+            <option value="2014/12/31">2014/12/31</option>
+            <option value="2013/12/31">2013/12/31</option>
+            <option value="2012/12/31">2012/12/31</option>
+            <option value="2011/12/31">2011/12/31</option>
+          </select>
+          <button class="submit-button btn btn-success"  type="submit">查询</button>
+        </div>
+        
+        <div class="notfound alert alert-danger alert-dismissible fade show" role="alert" style="display: none;">
+            股票信息不存在!
+          <button type="button" class="btn-close" aria-label="Close" onclick="Hide_alert()"></button>
+        </div>
+    </form>
+    <button class="submit-button btn btn-success" id="export_to_pdf">导出</button>
+    </div>  
+
+    <div class="vertical-line" id="border"></div>
+
+    <div class="result-container">
+      <div class="card" style="width: 100%;">
+       <h1 class="esg-score" id="list-score">?</h1>
+        <div class="card-body">
+          <h5 class="card-title">ESG 评级</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> 股票代码: <span id="list-stock-code">?</span></li>
+            <li class="list-group-item"> 环境: <span id="list-env">?</span></li>
+            <li class="list-group-item"> 社会: <span id="list-social">?</span></li>
+            <li class="list-group-item"> 政府: <span id="list-govern">?</span></li>
+            <li class="list-group-item"> 时间: <span id="list-date">?</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="vertical-line" id="border"></div>
+
+
+    <div class="chart-table-container">
+      <div class="chart-container">
+        <canvas id="myChart"></canvas>
+      </div>
+<br>
+      <div>
+        <h4 align="center" id="table_biaoti"></h4>
+        <table class="table table-striped">
+          <thead id="ESG_table_head_holder">
+            
+          </thead>
+          <tbody id="ESG_table_bodey_holder">
+
+          </tbody>
+        </table>
+      </div>
+      
+      
+
+    </div>
+
+  </div>
+  <script src="./js/table.js"></script>
+  <script src="./js/const.js"></script>
+  <script src="./js/esg_calculate.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="./js/mychart.js"></script>
+  <script src="./js/export.js"></script>
+</body>
+</html>
