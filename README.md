@@ -1,24 +1,24 @@
+# ESG评分计算软件设置和启动指南
 
-# 项目设置和启动指南
+## 简介
+本项目是一个用于计算环境、社会和公司治理（ESG）评分的软件。它旨在提供一个交互式工具，帮助用户了解和计算ESG评分。本软件仅为教育和学习目的而开发，所有版权归原作者所有，严禁用于商业用途。
 
-本指南旨在帮助开发者在本地环境中设置和运行Electron应用。以下步骤包括克隆GitHub项目、安装依赖及运行项目。
+## 项目目的
+该软件提供了一个实用的平台，通过具体的数据输入，用户可以计算和得到相关的ESG评分，以此深入理解各个公司或组织在环境、社会责任和治理方面的表现。该项目也旨在帮助开发者学习如何在本地环境中设置和运行一个基于Electron的应用。
 
 ## 前置条件
-
-确保你的本地环境已安装以下软件：
-
+请确保你的本地环境已安装以下软件：
 - **Git**: 用于克隆远程仓库。
 - **Node.js**: 运行JavaScript代码，npm用于管理Node包。
 
 ### 安装 Git 和 Node.js
-
-确保 Git 和 Node.js 已安装。你可以在终端运行以下命令来验证是否安装成功：
+确认 Git 和 Node.js 已安装。在终端运行以下命令以验证安装：
 
 ```bash
 git --version
 node --version
 npm --version
-```
+
 
 ### 如果这些工具尚未安装，你可以访问 [Git官网](https://git-scm.com/) 和 [Node.js官网](https://nodejs.org/) 来下载并安装。
 
@@ -27,11 +27,11 @@ npm --version
 克隆仓库到你的本地机器：
 
 ```bash
-git clone https://github.com/yourusername/ESG.git
+git clone https://github.com/abnb0208/ESG.git
 cd ESG
 ```
 
-请将 `yourusername` 替换为你的GitHub用户名。
+
 
 ## 安装依赖
 
