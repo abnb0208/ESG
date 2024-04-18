@@ -1,21 +1,19 @@
-# 项目部署和运行指南
+# 项目设置和启动指南
 
-本指南旨在帮助开发者和系统管理员在服务器上部署和运行 Electron 应用，包括从克隆项目、安装依赖到配置运行环境的全过程。
+本指南旨在帮助开发者在本地环境中设置和运行Electron应用。以下步骤包括克隆GitHub项目、安装依赖及运行项目。
 
-## 环境准备
+## 前置条件
 
-确保你的服务器安装了以下必要软件：
+确保你的本地环境已安装以下软件：
 
 - **Git**: 用于克隆远程仓库。
-- **Node.js**: 运行 JavaScript 代码，npm 用于管理包。
-- **Xvfb**（可选）: 在无图形界面的服务器上提供虚拟显示。
+- **Node.js**: 运行JavaScript代码，npm用于管理Node包。
 
 ### 安装 Git 和 Node.js
 
-在 Debian 或 Ubuntu 系统上，使用以下命令安装 Git 和 Node.js：
+确保 Git 和 Node.js 已安装。你可以在终端运行以下命令来验证是否安装成功：
 
 ```bash
-sudo apt update
-sudo apt install git
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt-get install -y nodejs
+git --version
+node --version
+npm --version
