@@ -17,7 +17,7 @@
 
 下图显示了ESG评分计算软件的用户界面：
 
-![ESG评分计算软件运行效果](https://raw.githubusercontent.com/abnb0208/ESG/main/images/screenshot.png)
+![ESG评分计算软件运行效果](https://raw.githubusercontent.com/abnb0208/ESG/master/images/screenshot.png)
 
 
 ### 安装 Git 和 Node.js
