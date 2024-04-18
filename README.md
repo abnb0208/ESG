@@ -13,6 +13,13 @@
 - **Git**: 用于克隆远程仓库。
 - **Node.js**: 运行JavaScript代码，npm用于管理Node包。
 
+## 运行效果图
+
+下图显示了ESG评分计算软件的用户界面：
+
+![ESG评分计算软件运行效果](https://raw.githubusercontent.com/abnb0208/ESG/main/images/screenshot.png)
+
+
 ### 安装 Git 和 Node.js
 确认 Git 和 Node.js 已安装。在终端运行以下命令以验证安装：
 ```bash
